@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Technologies from "./components/technologies/Technologies";
 
 const TechnologyDataFetch = async () => {
-  const res = await fetch("../public/data.json");
+  const res = await fetch("/data.json");
   const data = await res.json();
   return data;
   // console.log(data);

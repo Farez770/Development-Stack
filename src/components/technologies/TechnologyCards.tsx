@@ -1,4 +1,4 @@
-import { FaCheck, FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import type { ItechnologiType } from "./type";
 
 type Props = {
