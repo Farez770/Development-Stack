@@ -1,3 +1,73 @@
+# 🚀 DevStack - Devlopment Stack
+
+### Build Your Ideal Development Stack
+
+DevStack is a modern and interactive web application that helps developers explore different technologies and build their ideal development stack.
+
+Users can browse technologies by category, add technologies to their personal stack, remove them when needed, and visually manage their selected tools in one place.
+
+---
+
+## ✨ Features
+
+### 1. 🧩 Build Your Own Stack
+Explore different technologies and add them to your personal development stack with a single click.
+
+### 2. 📚 Explore Technologies
+Discover technologies across different categories such as Frontend, Backend, Database, Styling, Languages, DevOps, and Tools.
+
+### 3. ⚡ Interactive Stack Management
+Easily add, remove, and clear technologies from your stack with real-time UI updates and visual feedback.
+
+---
+
+## 🛠️ Technologies Used
+
+- ⚛️ React
+- 🔷 TypeScript
+- 🎨 Tailwind CSS
+- 🌼 DaisyUI
+- 🔔 React Toastify
+- ⭐ React Icons
+- ⚡ Vite
+
+---
+
+## 🎯 Project Highlights
+
+- Responsive design for desktop, tablet, and mobile
+- Component-based React architecture
+- Type-safe development with TypeScript
+- Dynamic state management using React Hooks
+- API data fetching
+- Interactive UI with smooth transitions
+- Clean and modern user interface
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
