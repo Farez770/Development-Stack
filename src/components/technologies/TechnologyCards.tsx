@@ -119,8 +119,8 @@ export default function TechnologyCards({
         >
           {isSelected ? (
             <>
-              <FaCheck className="text-base md:text-lg" />
-              <span>Stack Added</span>
+              {/* <FaCheck className="text-base md:text-lg" /> */}
+              <span className="text-xl font-semibold">✓ Added to Stack</span>
             </>
           ) : (
             "Add to Stack"

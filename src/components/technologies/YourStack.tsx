@@ -22,7 +22,7 @@ export default function YourStack({
         <p className="mt-2 text-slate-400 text-base">
           {selectedTechnology.length === 0
             ? "No technologies selected yet."
-            : `${selectedTechnology.length} technologies selected.`}
+            : `${selectedTechnology.length} Technology Selected.`}
         </p>
 
         {/* Empty Stack Box */}
@@ -47,7 +47,7 @@ export default function YourStack({
             {selectedTechnology.length > 0 && (
               <button
                 onClick={() => removeAllStack()}
-                className="mt-5 w-full rounded-xl border border-red-500 px-4 py-3 font-medium text-red-500 transition hover:bg-red-50"
+                className="mt-5 w-full rounded-xl border border-red-500 px-4 py-3 font-medium text-red-500 transition hover:bg-red-50 cursor-pointer"
               >
                 Remove All
               </button>

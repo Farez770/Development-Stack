@@ -27,7 +27,7 @@ export default function YourSelectedStack({ technology, removeStack }: Props) {
       {/* Cross button */}
       <button
         onClick={() => removeStack(technology.id)}
-        className="flex h-12 w-12 text-2xl items-center justify-center rounded-full text-slate-400 transition hover:bg-red-50 hover:text-red-500"
+        className="flex h-12 w-12 text-2xl items-center justify-center rounded-full text-slate-400 transition hover:bg-red-50 hover:text-red-500 cursor-pointer"
       >
         <FaXmark />
       </button>
