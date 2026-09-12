@@ -111,7 +111,7 @@ For example, I show a message when the user hasn't added anything to their stack
 
 For example:
 
-`jsx
+``jsx
 {selectedTechnology.length === 0 ? (
 
   <p>Your stack is empty.</p>
@@ -142,7 +142,7 @@ For example, my Technologies component passes the technology data and isSelected
 
 The child can send something back by calling a function that the parent passed as a prop:
 
-`jsx
+``jsx
 <button onClick={() => onAdd(technology)>
 Add to Stack
 </button>
