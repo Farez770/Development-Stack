@@ -24,7 +24,7 @@ export default function HeroBanner({}: Props) {
             Explore Technologies
           </button>
 
-          <button className="btn py-6  font-[inter] font-semibold rounded-xl">
+          <button className="btn py-6 px-8  font-[inter] font-semibold rounded-xl">
             Learn More
           </button>
         </div>
