@@ -4,7 +4,7 @@ type Props = {};
 
 export default function HeroBanner({}: Props) {
   return (
-    <div className="container mx-auto px-6 min-h-[calc(100vh-96px)] flex flex-col md:flex-row justify-center items-center gap-10 lg:gap-16">
+    <div className="container mx-auto px-6 min-h-[calc(100vh-90px)] flex flex-col md:flex-row justify-center items-center gap-10 lg:gap-16">
       {/* Left Content */}
       <div className="w-full md:w-1/2">
         <h1 className="font-extrabold text-4xl sm:text-5xl lg:text-7xl text-[#0f172a] mb-6 font-[Inter] text-center md:text-left">
@@ -19,12 +19,12 @@ export default function HeroBanner({}: Props) {
           side by side, and put together the stack that fits your next project.
         </p>
 
-        <div className="flex justify-center flex-row gap-3">
-          <button className="btn bg-linear-65 from-[#f97316] to-[#ec4899] text-white font-[inter] font-semibold py-6 rounded-xl">
+        <div className="flex justify-center md:justify-start flex-row gap-3">
+          <button className="btn bg-linear-65 from-[#f97316] to-[#ec4899] text-white font-[inter] font-semibold py-6  rounded-xl">
             Explore Technologies
           </button>
 
-          <button className="btn py-6 font-[inter] font-semibold rounded-xl">
+          <button className="btn py-6  font-[inter] font-semibold rounded-xl">
             Learn More
           </button>
         </div>

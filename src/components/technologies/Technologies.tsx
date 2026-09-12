@@ -90,10 +90,10 @@ export default function Technologies({ TechnologyDataPromise }: Props) {
         </p>
       </div>
       {/* ------- below the card section (Left) and the stack section (right) */}
-      <div className="flex flex-col lg:flex-row items-start gap-6 md:gap-8 lg:gap-5 xl:gap-4 2xl:gap-8">
+      <div className="flex flex-col lg:flex-row items-start gap-6 md:gap-8 lg:gap-4 xl:gap-4 2xl:gap-8">
         {/* justify-center */}
         {/* Technology Card */}
-        <div className="grid w-full min-w-0 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 ">
+        <div className="grid w-full min-w-0 grid-cols-1 gap-4 lg:gap-3 xl:gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 ">
           {technologyData.map((technology: ItechnologiType) => {
             const isSelected = selectedTechnology.some(
               (selectedTech) => selectedTech.id === technology.id,
@@ -108,7 +108,7 @@ export default function Technologies({ TechnologyDataPromise }: Props) {
             );
           })}
         </div>
-        <div>
+        <div className="w-full lg:w-[270px] xl:w-[300px] 2xl:w-[320px]">
           <YourStack
             selectedTechnology={selectedTechnology}
             removeStack={handleRemoveTechnology}

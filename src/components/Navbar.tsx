@@ -22,12 +22,12 @@ export default function Navbar({}: Props) {
         <div>
           <img src={logo} alt="" />
         </div>
-        <ul className="hidden md:flex gap-7 font-semibold text-[#475569]  ">
+        <ul className="hidden md:flex gap-7 font-semibold text-[#475569] cursor-pointer transition-all duration-700">
           <li className="active text-[#DB2777] ">Home</li>
-          <li>Technologies</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li className="hover:text-[#DB2777] ">Technologies</li>
+          <li className="hover:text-[#DB2777] ">Projects</li>
+          <li className="hover:text-[#DB2777] ">About</li>
+          <li className="hover:text-[#DB2777] ">Contact</li>
         </ul>
         <div className=" flex gap-2">
           <button className="btn rounded-3xl border-none">Sign In</button>
