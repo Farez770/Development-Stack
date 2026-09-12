@@ -92,13 +92,16 @@ React needs a unique `key` to identify each item in a list. It helps React under
 
 For example:
 
-``jsx
+`jsx
 {technologyData.map((technology) => (
 <TechnologyCards
     key={technology.id}
     technology={technology}
   />
 ))}
+`
+
+---
 
 ### 6. What is conditional rendering? Show one place you used it.
 
@@ -106,7 +109,9 @@ Conditional rendering means showing different content based on a condition.
 
 For example, I show a message when the user hasn't added anything to their stack:
 
-``jsx
+For example:
+
+`jsx
 {selectedTechnology.length === 0 ? (
 
   <p>Your stack is empty.</p>
@@ -117,6 +122,9 @@ For example, I show a message when the user hasn't added anything to their stack
     </div>
   ))
 )}
+`
+
+---
 
 ### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
@@ -124,22 +132,25 @@ I pass data from a parent to a child using props.
 
 For example, my Technologies component passes the technology data and isSelected value to TechnologyCards:
 
-``jsx
+`jsx
 <TechnologyCards
   technology={technology}
   isSelected={isSelected}
   onAdd={handleAddTechnology}
 />
+`
 
 The child can send something back by calling a function that the parent passed as a prop:
 
-``jsx
-<button onClick={() => onAdd(technology)}>
+`jsx
+<button onClick={() => onAdd(technology)>
 Add to Stack
 </button>
+`
 
 Here, TechnologyCards calls onAdd(), and the parent handles the action and updates the state.
-``
+
+---
 
 # React + TypeScript + Vite
 
