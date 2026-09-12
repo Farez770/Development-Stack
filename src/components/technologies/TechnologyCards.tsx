@@ -7,6 +7,8 @@ type Props = {
   onAdd: (technology: ItechnologiType) => void;
 };
 
+// leptop version e ekto edit korte hobe . klk korbo in sha-Allah
+
 export default function TechnologyCards({
   technology,
   isSelected,
@@ -15,10 +17,11 @@ export default function TechnologyCards({
   return (
     <div className="w-full">
       <div
-        className={` w-full max-w-[620px] md:max-w-[380px] min-h-[340px] md:min-h-[400px] rounded-3xl md:rounded-[30px] ${isSelected ? "border-2 border-green-500" : "border border-slate-200 "}  bg-white p-6 md:p-7 shadow-[0_4px_15px_rgba(15,23,42,0.04)] transition-all duration-300 hover:-translate-y-1
-        hover:shadow-[0_12px_30px_rgba(15,23,42,0.08)]`}
+        className={`w-full min-w-0  overflow-hidden min-h-[340px] md:min-h-[400px] rounded-3xl md:rounded-[30px] ${
+          isSelected ? "border-2 border-green-500" : "border border-slate-200"
+        } bg-white p-5 md:p-6 lg:p-5 shadow-[0_4px_15px_rgba(15,23,42,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(15,23,42,0.08)]`}
       >
-        <div className="flex items-center justify-between gap-2 md:hidden">
+        <div className="flex items-center justify-between gap-2  md:hidden">
           {/* Left side: Icon + Name */}
           <div className="flex min-w-0 items-center gap-3">
             {/* Icon Background */}
@@ -48,7 +51,8 @@ export default function TechnologyCards({
           </span>
         </div>
 
-        <div className="hidden items-start justify-between md:flex">
+        <div className="hidden min-w-0 items-start justify-between gap-2 md:flex">
+          {/* items-start justify-between */}
           {/* Technology Icon */}
           <div className=" flex h-14 w-14 items-center justify-center ">
             <img
@@ -59,49 +63,37 @@ export default function TechnologyCards({
           </div>
 
           {/* Badge */}
-          <span
-            className=" rounded-full border border-sky-100 bg-sky-50 px-5 py-2 text-base font-medium
-              text-sky-500"
-          >
+          <span className="shrink-0 rounded-full border border-sky-100 bg-sky-50 px-3 py-2 text-sm font-medium text-sky-500 lg:px-3 xl:px-5 xl:text-base">
             {technology.badge}
           </span>
         </div>
 
-        <h2
-          className=" mt-6 hidden text-3xl  font-bold
-            text-slate-900 md:block"
-        >
+        <h2 className=" mt-5 hidden text-2xl font-bold text-slate-900 md:block lg:text-2xl xl:mt-6 xl:text-3xl">
           {technology.name}
         </h2>
 
         <p
-          className="mt-4 text-base text-slate-500 md:mt-4
-            md:min-h-[96px] mdtext-lg md:leading-7"
+          className="mt-4 min-w-0 wrap-break-word leading-7 text-base text-slate-500 md:mt-4
+            md:min-h-[96px] md:text-base md:leading-7"
         >
           {technology.description}
         </p>
 
         <div className="divider"></div>
 
-        <div className=" flex items-center justify-between gap-3 ">
+        <div className="flex items-center justify-between gap-2 2xl:gap-3 ">
           {/* Category */}
-          <span
-            className=" shrink-0 rounded-lg bg-slate-100
-              px-3 py-1.5 text-sm font-medium text-slate-600 md:px-4 md:py-2 md:text-base"
-          >
+          <span className=" shrink-0 rounded-lg bg-slate-100 px-3 py-1.5 font-medium text-slate-700 md:px-3 md:py-2 text-sm 2xl:text-base ">
             {technology.category}
           </span>
 
           {/* Difficulty */}
-          <span className=" whitespace-nowrap text-sm font-medium text-slate-500 md:text-base">
+          <span className=" whitespace-nowrap text-sm font-medium text-slate-500 2xl:text-base">
             {technology.difficulty}
           </span>
 
           {/* Rating */}
-          <div
-            className=" flex shrink-0 items-center gap-1.5 text-sm font-medium text-slate-700 md:gap-2
-            md:text-base"
-          >
+          <div className=" flex shrink-0 items-center gap-1.5 text-sm font-medium text-slate-700 md:gap-2 2xl:text-base">
             <FaStar className="text-yellow-400" />
 
             <span>{technology.rating}</span>

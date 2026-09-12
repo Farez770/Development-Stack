@@ -78,8 +78,8 @@ export default function Technologies({ TechnologyDataPromise }: Props) {
 
   return (
     <div className="mb-20 container mx-auto px-6">
-      <div className="mb-10">
-        <h1 className="font-extrabold text-4xl mb-2">
+      <div className="mb-10 text-center md:text-start">
+        <h1 className="font-extrabold text-3xl md:text-3xl lg:text-4xl mb-2">
           Explore the{" "}
           <span className="bg-linear-to-r from-[#ec4899]  to-[#8b5cf6] bg-clip-text text-transparent">
             Technologies
@@ -90,8 +90,10 @@ export default function Technologies({ TechnologyDataPromise }: Props) {
         </p>
       </div>
       {/* ------- below the card section (Left) and the stack section (right) */}
-      <div className="flex flex-col md:flex-row justify-center gap-10 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
+      <div className="flex flex-col lg:flex-row items-start gap-6 md:gap-8 lg:gap-5 xl:gap-4 2xl:gap-8">
+        {/* justify-center */}
+        {/* Technology Card */}
+        <div className="grid w-full min-w-0 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 ">
           {technologyData.map((technology: ItechnologiType) => {
             const isSelected = selectedTechnology.some(
               (selectedTech) => selectedTech.id === technology.id,

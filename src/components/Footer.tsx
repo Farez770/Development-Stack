@@ -5,7 +5,7 @@ type Props = {};
 export default function Footer({}: Props) {
   return (
     <div className="container mx-auto px-6 pt-16 pb-12 border-t-2 border-gray-200">
-      <div className="flex justify-between mb-12 ">
+      <div className="flex justify-between mb-12 md:gap-8 lg:justify-between ">
         {/* Left content */}
         <div className="space-y-3 flex flex-col justify-center items-center md:justify-start md:items-start ">
           <img src={footerLogo} alt="" />
@@ -47,7 +47,7 @@ export default function Footer({}: Props) {
         </div>
       </div>
       <div className="divider"></div>
-      <div className="flex justify-between mt-8">
+      <div className="flex flex-col items-center gap-2 md:justify-between md:flex-row mt-8">
         <p className="text-[#94a3b8] text-base ">
           © 2026 Dev Stack. All rights reserved.
         </p>

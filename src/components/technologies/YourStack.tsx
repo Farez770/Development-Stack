@@ -14,7 +14,7 @@ export default function YourStack({
 }: Props) {
   return (
     <div>
-      <div className=" rounded-[28px] w-full md:w-[300px] border border-slate-200 bg-white p-6 shadow-[0_3px_8px_rgba(15,23,42,0.06)]">
+      <div className="w-full rounded-[28px] border border-slate-200 bg-white p-6 text-center shadow-[0_3px_8px_rgba(15,23,42,0.06)] md:w-full lg:w-[270px] xl:w-[300px] 2xl:w-[320px] lg:text-start">
         {/* Heading */}
         <h2 className="text-2xl font-bold text-slate-900">Your Stack</h2>
 

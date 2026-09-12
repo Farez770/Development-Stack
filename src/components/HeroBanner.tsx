@@ -19,7 +19,7 @@ export default function HeroBanner({}: Props) {
           side by side, and put together the stack that fits your next project.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div className="flex justify-center flex-row gap-3">
           <button className="btn bg-linear-65 from-[#f97316] to-[#ec4899] text-white font-[inter] font-semibold py-6 rounded-xl">
             Explore Technologies
           </button>
