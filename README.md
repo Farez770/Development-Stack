@@ -70,12 +70,14 @@ JSX is a way to write HTML-like code inside JavaScript or TypeScript. I use it i
 
 In my DevStack project, I used it to keep track of the technologies that the user added to their stack.
 
-````tsx
-const [selectedTechnology, setSelectedTechnology] = useState<
-  ItechnologiType[]
->([]);
+```tsx
+const [selectedTechnology, setSelectedTechnology] = useState<ItechnologiType[]>(
+  [],
+);
+```
 
-```md
+---
+
 ### 4. What does the `useEffect` hook do, and did you use it in this project?
 
 `useEffect` is used for handling side effects in React, such as fetching data from an API.
@@ -83,7 +85,7 @@ const [selectedTechnology, setSelectedTechnology] = useState<
 I did not use `useEffect` to load the JSON data in my DevStack project. Instead, I used React's `use()` with a Promise to load the technology data.
 
 ---
-``md
+
 ### 5. Why does every item in a `.map()` list need a unique `key` prop?
 
 React needs a unique `key` to identify each item in a list. It helps React understand which item has changed, been added, or removed.
@@ -92,12 +94,12 @@ For example:
 
 ``jsx
 {technologyData.map((technology) => (
-  <TechnologyCards
+<TechnologyCards
     key={technology.id}
     technology={technology}
   />
 ))}
-``md
+
 ### 6. What is conditional rendering? Show one place you used it.
 
 Conditional rendering means showing different content based on a condition.
@@ -106,6 +108,7 @@ For example, I show a message when the user hasn't added anything to their stack
 
 ``jsx
 {selectedTechnology.length === 0 ? (
+
   <p>Your stack is empty.</p>
 ) : (
   selectedTechnology.map((technology) => (
@@ -114,6 +117,7 @@ For example, I show a message when the user hasn't added anything to their stack
     </div>
   ))
 )}
+
 ### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
 I pass data from a parent to a child using props.
@@ -131,19 +135,11 @@ The child can send something back by calling a function that the parent passed a
 
 ``jsx
 <button onClick={() => onAdd(technology)}>
-  Add to Stack
+Add to Stack
 </button>
 
 Here, TechnologyCards calls onAdd(), and the parent handles the action and updates the state.
-
-
-
-
-
-
-
-
-
+``
 
 # React + TypeScript + Vite
 
@@ -174,6 +170,6 @@ If you are developing a production application, we recommend enabling type-aware
     "react/only-export-components": ["warn", { "allowConstantExport": true }]
   }
 }
-````
+```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
